@@ -50,14 +50,15 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@use "../../scss/variables" as *;
 .backdrop {
   position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: $clr-shadow-heavy;
   z-index: 10;
 }
 
@@ -69,16 +70,16 @@ dialog {
   z-index: 100;
   border-radius: 12px;
   border: none;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 8px $clr-shadow-light;
   padding: 0;
   margin: 0;
   overflow: hidden;
-  background-color: white;
+  background-color: $clr-white-10;
 }
 
 header {
-  background-color: #3a0061;
-  color: white;
+  background-color: $clr-blue-10;
+  color: $clr-white-10;
   width: 100%;
   padding: 1rem;
 }
@@ -123,25 +124,4 @@ menu {
     transform: scale(1);
   }
 }
-
-/*
-.dialog-enter-active {
-  transition: all .3s ease-out;
-}
-
-.dialog-leave-active {
-  transition: all .3s ease-in;
-}
-
-.dialog-enter-from,
-.dialog-leave-to {
-  opacity: 0;
-  scale: 0.75;
-}
-
-.dialog-enter-to,
-.dialog-leave-from {
-  opacity: 1;
-  scale: 1;
-}*/
 </style>

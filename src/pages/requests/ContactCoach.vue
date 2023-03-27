@@ -58,10 +58,12 @@ export default {
 
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@use "../../scss/variables" as *;
+
 form {
     margin: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid $clr-grey-30;
     border-radius: 12px;
     padding: 1rem;
 }
@@ -81,20 +83,19 @@ textarea {
     display: block;
     width: 100%;
     font: inherit;
-    border: 1px solid #ccc;
+    border: 1px solid $clr-grey-30;
     padding: 0.15rem;
-}
 
-input:focus,
-textarea:focus {
-    border-color: #3d008d;
-    background-color: #faf6ff;
+    
+&:focus {
+    border-color: $clr-blue-10;
+    background-color: $clr-white-10;
     outline: none;
 }
-
+}
 .errors {
     font-weight: bold;
-    color: red;
+    color: $clr-error;
 }
 
 .actions {

@@ -13,10 +13,11 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@use "../../scss/variables" as *;
 .badge {
-    background-color: #ccc;
-    color: #252525;
+    background-color: $clr-grey-30;
+    color: $clr-black;
     border-radius: 30px;
     padding: 0.5rem 1.5rem;
     display: inline-block;
@@ -24,17 +25,17 @@ export default {
 }
 
 .frontend {
-    background-color: #3d008d;
-    color: white;
+    background-color: $clr-blue-10;
+    color: $clr-white-20;
 }
 
 .backend {
-    background-color: #71008d;
-    color: white;
+    background-color:$clr-purple-10;
+    color: $clr-white-20;
 }
 
 .career {
-    background-color: #8d006e;
-    color: white;
+    background-color: $clr-purple-20;
+    color: $clr-white-20;
 }
 </style>

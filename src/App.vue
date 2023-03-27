@@ -34,18 +34,31 @@ export default {
 </script>
 
 <style lang="scss">
+@use "./scss/variables" as *;
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  color: $clr-black;
+  background-color: $clr-white-20;
+}
 
 * {
     box-sizing: border-box;
 }
 
-html {
+body {
+  margin: 0;
+}
+
+html {   
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    
     font-family: "Roboto", sans-serif;
 }
 
-body {
-    margin: 0;
+html::-webkit-scrollbar { 
+    display: none;
 }
 
 .routing-enter-active {

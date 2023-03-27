@@ -18,22 +18,24 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@use "../../scss/variables" as *;
+
 li {
   margin: 1rem 0;
-  border: 1px solid #ccc;
+  border: 1px solid $clr-grey-30;
   padding: 1rem;
 }
 
 a {
-  color: #3d008d;
+  color: $clr-blue-10;
   text-decoration: none;
   font-weight: bold;
 }
 
 a:hover,
 a:active {
-  color: #8d007a;
+  color: $clr-purple-20;
 }
 
 p {

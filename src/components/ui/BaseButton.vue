@@ -31,14 +31,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@use "../../scss/variables" as *;
+
 button,
 a {
   text-decoration: none;
   padding: 0.75rem 1.5rem;
   font: inherit;
-  background-color: #3a0061;
-  border: 1px solid #3a0061;
-  color: white;
+  background-color: $clr-blue-10;
+  border: 1px solid $clr-blue-10;;
+  color: $clr-white-20;
   cursor: pointer;
   border-radius: 30px;
   margin-right: 0.5rem;
@@ -46,30 +48,30 @@ a {
 
   &:active,
   &:hover {
-    background-color: #270041;
-    border-color: #270041;
+    background-color: $clr-blue-5;
+    border-color: $clr-blue-5;
   }
 }
 
 .flat {
   background-color: transparent;
-  color: #3a0061;
+  color: $clr-blue-10;;
   border: none;
 
   &:active,
   &:hover {
-    background-color: #edd2ff;
+    background-color: $clr-pink-30;
   }
 }
 
 .outline {
   background-color: transparent;
-  color: #270041;
+  color: $clr-blue-5;
   border-color: currentColor;
 
   &:active,
   &:hover {
-    background-color: #edd2ff;
+    background-color: $clr-pink-30;
   }
 }
 </style>

@@ -54,17 +54,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@use "../../scss/variables" as *;
+
 header {
     width: 100%;
     height: 5rem;
-    background-color: #3d008d;
+    background-color: $clr-blue-10;
     display: flex;
     justify-content: center;
     align-items: center;
 
     a {
         text-decoration: none;
-        color: #f391e3;
+        color: $clr-pink-20;
         display: inline-block;
         padding: 0.75rem 1.5rem;
         border: 1px solid transparent;
@@ -72,17 +74,17 @@ header {
         &:hover,
         &:active,
         &.router-link-active {
-            border: 1px solid #f391e3;
+            border: 1px solid $clr-pink-20;
         }
     }
 
     button {
-        color: #f391e3;
+        color: $clr-pink-20;
         background-color: transparent;
         border-color:currentColor;
         &:active,
         &:hover {
-            background-color: #44009c;
+            background-color: $clr-blue-20;
             border-color:currentColor;
         }
     }
@@ -91,7 +93,7 @@ header {
         margin: 0;
 
         a {
-            color: white;
+            color: $clr-white-20;
             margin: 0;
 
             &:hover,

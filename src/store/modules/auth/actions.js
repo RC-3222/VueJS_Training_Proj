@@ -20,11 +20,12 @@ function getLocalStorageData() {
     }
 }
 
+
 export default {
     async auth(context, payload) {
         const baseUrl = (payload.mode === 'signin' ? 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=' : 'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=' )
 
-        const response = await fetch(`${baseUrl}${process.env.API_KEY}`, {
+        const response = await fetch(`${baseUrl}${process.env.VUE_APP_API_KEY}`, {
             method: 'POST',
             body: JSON.stringify({
                 email:payload.email,

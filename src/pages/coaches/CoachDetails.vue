@@ -39,7 +39,6 @@ export default {
         }
     },
     created() {
-        // this.selectedCoach = this.$store.getters['coaches/coaches'].find((item)=>item.id === this.id);
         this.loadCoachDetails()
     },
     computed: {

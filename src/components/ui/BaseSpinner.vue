@@ -13,7 +13,9 @@
   </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@use "../../scss/variables" as *;
+
 .spinner {
   display: flex;
   justify-content: center;
@@ -38,7 +40,7 @@
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #3d008d;
+  background: $clr-blue-10;
   margin: -4px 0 0 -4px;
 }
 .lds-roller div:nth-child(1) {
